@@ -1,0 +1,50 @@
+<% @title = "Registrar" %>
+
+<% unless @sucess %>
+    <h2>Registrar</h2>
+    <form action="/register" method="post">
+        <label for="username">Nome de usuário: </label>
+        <input type="text" name="username" id="username">
+        
+        <label for="birthday-date">Data de nascimento: </label>
+        <input type="date" name="birthday-date" id="birthday-date">
+
+        <label for="email">E-mail: </label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="password-1">Senha: </label>
+        <input type="password" name="password-1" id="password-1" required>
+
+        <label for="password-2">Escreva novamente sua senha: </label>
+        <input type="password" name="password-2" id="password-2" required>
+
+        <input type="submit" value="Registrar">
+    </form>
+    <p>Caso já possua uma conta, faça o <a href="/login">login</a></p>
+<% else %>
+    <h2>Registro feito com sucesso!</h2>
+    <p>Agora faça o <a href="/login">login</a></p>
+    <script>
+        alert("✅ Registro concluído com sucesso!");
+    </script>
+<% end %>
+
+<% if @diferpassword %>
+    <script>
+        alert("⚠️ Senhas diferentes!");
+    </script>
+<% end %>
+
+<% if @user_exists %>
+    <script>
+        alert("Usuário já existente!");
+    </script>
+<% end %>
+
+<% if @fail %>
+    <script>
+        alert("Erro!");
+    </script>
+<% end %>
+
+

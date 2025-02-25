@@ -1,0 +1,17 @@
+<% @title = "Entrar" %>
+<% if @user %>
+    <h2>Seja bem-vindo <%= @user[:username]%></h2>
+    <p>Agora, vá para o <a href="/">menu principal</a> e aproveite tudo o que esse sistema pode ofecerer!</p>
+<% else %>
+    <h2>Login</h2>
+
+    <form action="/login" method="post">
+        <label for="email">E-mail: </label>
+        <input type="email" name="email" id="" >
+        <label for="password">Senha: </label>
+        <input type="password" name="password" id="">
+        <input type="submit" value="Login">
+    </form>
+
+    <p>Caso não seja registrado, clique aqui: <a href="/register">REGISTRAR</a><p>
+<% end %>

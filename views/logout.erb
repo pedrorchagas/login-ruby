@@ -1,0 +1,11 @@
+<% @title = "Sair" %>
+
+<% unless @sucess%>
+    <h1>Olá, deseja realmente sair da sua conta?</h1>
+    <form action="/logout" method="post">
+        <button type="submit">Sair</button>
+    </form>
+<% else %>
+    <h1>Foi muito bom enquanto durou!</h1>
+    <p>Caso queira entrar novamente faça o seu <a href="/login">login</a>.</p>
+<% end %>
