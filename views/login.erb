@@ -1,6 +1,6 @@
 <% @title = "Entrar" %>
 <% if @user %>
-    <h2>Seja bem-vindo <%= @user[:username]%></h2>
+    <h2>Seja bem-vindo <%= @user["username"]%></h2>
     <p>Agora, vá para o <a href="/">menu principal</a> e aproveite tudo o que esse sistema pode ofecerer!</p>
 <% else %>
     <h2>Login</h2>

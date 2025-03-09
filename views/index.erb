@@ -1,7 +1,12 @@
 <% @title = "Menu" %>
 <% if @user %>
-    <h1>Seja muito bem-vindo <%= @user[:username]%></h1>
-    <p>Você está logado!</p>
+    <h2>Seja muito bem-vindo <%= @user["username"]%></h1>
+    <h3>Suas informações:</h3>
+    <ul>
+        <li>Email: <b><%= @user["email"]%></b></li>
+        <li>Aniversário: <b><%= @user["birthday"]%></b></li>
+        <li>Entrou em: <b><%= @user["created"]%></b></li>
+    </ul>
 <% else %>
     <h1>Seja muito bem-vindo!</h1>
     <p>Esse é um sistema de login feito em Ruby focado nos meus estudos.</p>
