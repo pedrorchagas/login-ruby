@@ -25,7 +25,7 @@ Aqui é onde o usuário cria sua conta e informa algumas informações para uso 
 ![Area de registro](https://github.com/pedrorchagas/login-ruby/blob/main/Images/Registrar.png)
 ### Área de login
 Aqui é onde o usuário faz o seu login, email e senha. 
-OBS: No meio tempo que estava fazendo esse projeto, eu estudei um pouco sobre SQL injection e infelizmente o meu sistema estava vulnerável, mas trando a entrada de informações consegui mitigar essa falha.
+OBS: No meio tempo que estava fazendo esse projeto, eu estudei um pouco sobre SQL injection e infelizmente o meu sistema estava vulnerável, mas tratando a entrada de informações consegui mitigar essa falha.
 ![Area de login](https://github.com/pedrorchagas/login-ruby/blob/main/Images/Login.png)
 ### Index com o usuário logado
 Quando o usuário faz o login, é salvo um UUID em um cookie e com esse cookie podemos modificar o conteúdo visto pelo usuário, pois puxamos suas informações do banco de dados.
