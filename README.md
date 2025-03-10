@@ -1,7 +1,3 @@
-
-# Project Title
-
-A brief description of what this project does and who it's for
 # Sistema de login 
 Um simples sistema de login feito em Ruby
 
